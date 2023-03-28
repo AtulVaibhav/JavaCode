@@ -14,6 +14,7 @@ public class Product {
 		this.productName = productName;
 		this.productDesc = productDesc;
 		System.out.println("Inside constructor = "+this);
+		
 	}
 
 	public static void main(String[] args) {
