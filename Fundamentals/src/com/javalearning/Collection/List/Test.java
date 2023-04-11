@@ -41,8 +41,8 @@ class EmployeeInfo implements Comparable<EmployeeInfo>{
 
 	@Override
 	public int compareTo(EmployeeInfo o) {
-		//return this.salary - o.salary;
-		return o.salary  - this.salary;
+		return this.salary - o.salary;
+		//return o.salary  - this.salary;
 	}
 	
 }
