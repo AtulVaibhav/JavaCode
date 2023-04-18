@@ -1,7 +1,6 @@
 package com.javalearning.multiThreading;
 
-class Mythread2 implements Runnable{
-
+class Mythreaddata2 implements Runnable{
 	@Override
 	public void run() {
 		System.out.println("Thread executed method");	
@@ -9,7 +8,7 @@ class Mythread2 implements Runnable{
 }
 public class Test2 {
 	public static void main(String[] args) {
-		Mythread2 t1 = new Mythread2();
+		Mythreaddata2 t1 = new Mythreaddata2();
 		Thread th = new Thread(t1);
 		th.start();
 
