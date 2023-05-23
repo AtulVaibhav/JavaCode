@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="greet" class="com.learning.Spring.Greeting">
+    <property name="greetingMsg" value="Good morning.We are learning Spring"/>
+   </bean>
+   
+   <bean id="sbi" class="com.learning.Spring.Impl.SBI"/>
+   <bean id="pnb" class="com.learning.Spring.Impl.PNB"/>
+   
+   <bean id ="bank" class="com.learning.Spring.services.Bank">
+    <property name="rbi" ref="sbi"/>
+   </bean>
+
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean id="emp" class="com.learning.Spring.setterInjection.collectionType.Employee">
+<property name="empId" value="101"/>
+<property name="empName" value="Arun"/>
+<property name="empDept" value="Testing"/>
+<property name="projectName">
+
+<list>
+<value>Project1</value>
+<value>Project2</value>
+<value>Project3</value>
+</list>
+
+</property>
+
+
+</bean>
+
+ </beans>
