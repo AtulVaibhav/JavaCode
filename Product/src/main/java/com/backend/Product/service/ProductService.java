@@ -55,7 +55,9 @@ public class ProductService {
 	    return "No product found with id "+id;
 	
 	}
-	public Product searchProduct(String productName){
-		return null;
-	}
+	
+//	public List<Product> searchProduct(String productName){
+//		return productRepository.findByName(productName);
+//	}
+	
 }

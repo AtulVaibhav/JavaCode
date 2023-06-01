@@ -30,8 +30,8 @@ public class ProductController {
 	public Product getProduct(@PathVariable int id){
 		return productService.getProduct(id);
 	}
-	
-	@GetMapping("/api/v1/product")
+	@CrossOrigin("http://localhost:4200/")
+	@GetMapping("/post")
 	public List<Product> getAllProduct(){
 		return productService.getAllProduct();
 	}
@@ -45,10 +45,11 @@ public class ProductController {
 	public String deleteProduct(@PathVariable int id){
 		return productService.deleteProduct(id);
 	}
-	
-	@GetMapping("/api/v1/product/{productName}")
-	public Product searchProduct(@PathVariable String productName){
-		return productService.searchProduct(productName);
-	}
+//	
+//	@GetMapping("/api/v1/product/{productName}")
+//	public List<Product> searchProduct(@PathVariable String productName){
+//		return productService.searchProduct(productName);
+//	}
+//	
 	
 }
